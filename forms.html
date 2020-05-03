@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* styling registration form */
+
+        div {
+            background-color: lightblue;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 10px 10px 10px 10px;
+        }
+        form {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: monospace;
+            background-color: aqua;
+            padding: 20px 0px 20px 0px;
+            margin: 0px 0px 40px 0px;
+            border-radius: 10px;
+        }
+        input[type=text] {
+            font-family:  times;
+            font-size: 24px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            margin-top: 10px;
+        }
+        input[type=email] {
+            font-family:  times;
+            font-size: 24px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            margin-top: 10px; 
+        }
+        input[type=tel] {
+            font-family:  times;
+            font-size: 24px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            margin-top: 10px; 
+        }
+        label {
+            font-family: times;
+            font-size: 20px;
+            margin: 10px;
+        }
+        input[type=submit] {
+            background-color: rgb(71, 226, 71);
+            width: 25%;
+            height: 50px;
+            border-radius: 18px;
+            font-family: times;
+            font-size: 25px;
+        }
+        input[type=submit]:hover{
+            background-color: grey;
+            cursor: pointer;
+        }  
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>Registration Form</h1>
+            <br>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="firstname"  placeholder="eg,first name">
+            <br><br>
+
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name="lastname" class="lname" placeholder="eg,last name">
+            <br><br>
+
+            <label for="Email">Email</label><br>
+            <input type="email" name="email" class="email" placeholder="eg,email">
+            <br><br>
+
+            <label for="Phone">Phone</label><br>
+            <input type="tel" name="phone" class="phone" placeholder="eg,phone">
+            <br><br>
+
+            <label><span style="font-family: sans-serif; font-size: 20px; background-color: aqua; border-radius: 10px; padding: 4px;">Gender : </span> Male</label>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label>Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label>Other</label>
+            <input type="radio" name="gender" id="other" value="other"><br><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>  
+</body>
+</html>
